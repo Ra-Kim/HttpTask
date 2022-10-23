@@ -9,14 +9,67 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
   <title>Document</title>
+  <style>
+    html, body {
+    height: 100%;
+    width: 100%;
+    font-family: Inter, "sans-serif";
+  }
+  
+  header {
+    display: grid;
+    width: 50%;
+    margin: 0 auto;
+    grid-template-columns: 60% 40%;
+  }
+  nav {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    margin-left: auto;
+  }
+
+  h1 {
+    color: rgb(68, 118, 180);
+  }
+
+  a {
+    text-decoration: none;
+  }
+  
+  .bio {
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  #smaller-bio {
+    margin-top: 4%;
+    width: 40%;
+    text-align: left;
+    padding-inline: 2%;
+  }
+  
+  img {
+    width: 30%;
+    height: 30%;
+    border-radius: 50%;
+  }
+  
+  .small-img {
+    width: 25%;
+    margin-left: 35%;
+  }
+  </style>
 </head>
 <body>
   <header>
     <h1>About Me</h1>
     <nav>
-      <p>Home</p>
-      <p>About</p>
-      <p>Contact</p>
+      <p><a href="home">Home</a></p>
+      <p><a href="about">About</a></p>
+      <p><a href="contact">Contact</a></p>
     </nav>
   </header>
   <div class="bio" id="smaller-bio">
